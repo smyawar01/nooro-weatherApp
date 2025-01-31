@@ -1,6 +1,5 @@
 //
 //  Theme.swift
-//  WorldOfPAYBACK
 //
 //  Created by muhammad Yawar on 2/10/23.
 //

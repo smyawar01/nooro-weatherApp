@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F5C5DFAC2D424B07007D335A /* SwiftyMocky in Frameworks */ = {isa = PBXBuildFile; productRef = F5C5DFAB2D424B07007D335A /* SwiftyMocky */; };
+		F5C5DFAE2D424B07007D335A /* SwiftyPrototype in Frameworks */ = {isa = PBXBuildFile; productRef = F5C5DFAD2D424B07007D335A /* SwiftyPrototype */; };
+		F5C5DFB02D424B07007D335A /* swiftymocky in Frameworks */ = {isa = PBXBuildFile; productRef = F5C5DFAF2D424B07007D335A /* swiftymocky */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F579850B2D10366C00D2EC95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -72,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C5DFAC2D424B07007D335A /* SwiftyMocky in Frameworks */,
+				F5C5DFB02D424B07007D335A /* swiftymocky in Frameworks */,
+				F5C5DFAE2D424B07007D335A /* SwiftyPrototype in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +157,9 @@
 			);
 			name = "nooro-weatherAppTests";
 			packageProductDependencies = (
+				F5C5DFAB2D424B07007D335A /* SwiftyMocky */,
+				F5C5DFAD2D424B07007D335A /* SwiftyPrototype */,
+				F5C5DFAF2D424B07007D335A /* swiftymocky */,
 			);
 			productName = "nooro-weatherAppTests";
 			productReference = F579850A2D10366C00D2EC95 /* nooro-weatherAppTests.xctest */;
@@ -208,6 +220,9 @@
 			);
 			mainGroup = F57984F12D10366A00D2EC95;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F5C5DFAA2D424B07007D335A /* XCRemoteSwiftPackageReference "SwiftyMocky" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F57984FB2D10366A00D2EC95 /* Products */;
 			projectDirPath = "";
@@ -468,7 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.nooro-weatherAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,7 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.nooro-weatherAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,6 +584,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5C5DFAA2D424B07007D335A /* XCRemoteSwiftPackageReference "SwiftyMocky" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MakeAWishFoundation/SwiftyMocky";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5C5DFAB2D424B07007D335A /* SwiftyMocky */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5C5DFAA2D424B07007D335A /* XCRemoteSwiftPackageReference "SwiftyMocky" */;
+			productName = SwiftyMocky;
+		};
+		F5C5DFAD2D424B07007D335A /* SwiftyPrototype */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5C5DFAA2D424B07007D335A /* XCRemoteSwiftPackageReference "SwiftyMocky" */;
+			productName = SwiftyPrototype;
+		};
+		F5C5DFAF2D424B07007D335A /* swiftymocky */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5C5DFAA2D424B07007D335A /* XCRemoteSwiftPackageReference "SwiftyMocky" */;
+			productName = swiftymocky;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F57984F22D10366A00D2EC95 /* Project object */;
 }
